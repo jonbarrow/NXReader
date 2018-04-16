@@ -1,0 +1,38 @@
+{
+  "name": "nxreader",
+  "version": "1.0.0",
+  "description": "Node module for parsing several Switch (NX) file types",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "python-struct": "^1.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedDuckss/NXReader.git"
+  },
+  "keywords": [
+    "nx",
+    "switch",
+    "rom",
+    "dump",
+    "reader",
+    "parser",
+    "nintendo"
+  ],
+  "author": "RedDuckss (Jonathan Barrow)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedDuckss/NXReader/issues"
+  },
+  "homepage": "https://github.com/RedDuckss/NXReader#readme"
+}
