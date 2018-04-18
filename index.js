@@ -1,1 +1,1 @@
-module.exports = require('./lib/xci');
+module.exports = require('./lib/reader');

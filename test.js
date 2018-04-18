@@ -1,8 +1,10 @@
 const fs = require('fs');
 const NXReader = require('./'); // Require lib
 
+console.time('Parser');
 // Parse cart dump
 const XCI = NXReader.parseXCI('./bbb-h-aaaca.xci');
+console.timeEnd('Parser');
 
 // Function used for extracting dumps icon
 for (const file of XCI.partitions.normal.files) {
@@ -15,7 +17,7 @@ for (const file of XCI.partitions.normal.files) {
 	if (file.type == 'nca') {
 		// Calculate the files offset
 		const partition = XCI.partitions.normal;
-		const file_offset = (partition.offset + partition.name_table_size) + (0x10 + 0x40 * partition.file_count);
+		const file_offset = (partition.offset + file.offset);
 		
 		// Allocate the buffer and store the file
 		const nca_buffer = Buffer.alloc(file.size);
@@ -23,11 +25,10 @@ for (const file of XCI.partitions.normal.files) {
 
 		// Parse it
 		// (this is unfinished, and does not work yet)
-		const NCA = NXReader.parseNCA(nca_buffer);
-		// Extract the image(s)
+		const NCA = NXReader.parseNCA('./test.nca');
 		
-		console.log(NCA.decrypted.header);
+		console.log(NCA.header);
 	}
 }
 
-//console.log(XCI);
+console.log(XCI);
