@@ -7,8 +7,8 @@ npm i --save https://github.com/RedDuckss/NXReader
 
 ## Completed formats:
 - [x] XCI (cartridge dumps)
-- [ ] NCA (rom executable) (partly complete)
-- [ ] NSO (rom executable) (seems to be mostly used for homebrew)
+- [ ] NCA (rom executable and metadata) (partly complete)
+- [ ] NSO (rom executable)
 - [x] NRO (rom executable) (seems to be mostly used for homebrew)
 
 **These 4 file formats are the only ones I am aware of. If any more exist I may add support for them later**
