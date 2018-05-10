@@ -5,13 +5,20 @@
 npm i --save https://github.com/RedDuckss/NXReader
 ```
 
+## Completed formats:
+- [x] XCI (cartridge dumps)
+- [ ] NCA (rom executable) (partly complete)
+- [ ] NSO (rom executable) (seems to be mostly used for homebrew)
+- [x] NRO (rom executable) (seems to be mostly used for homebrew)
+These 4 file formats are the only ones I am aware of. If any more exist I may add support for them later
+
 ## API
 
 ## NXReader.parseXCI(path);
 ### Params:
 > - path = path to XCI cartidge dump
 
-## NXReader.parseNCA(path);
+## NXReader.parseNCA(path); (Incomplete. Only parses and decrypts NCA header)
 ### Params:
 > - path = path to NCA rom executable
 
