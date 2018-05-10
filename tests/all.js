@@ -1,28 +1,4 @@
-# Node module for parsing several Switch (NX) file types
-
-## install
-```
-npm i --save https://github.com/RedDuckss/NXReader
-```
-
-## API
-
-## NXReader.parseXCI(path);
-### Params:
-> - path = path to XCI cartidge dump
-
-## NXReader.parseNCA(path);
-### Params:
-> - path = path to NCA rom executable
-
-## NXReader.parseNRO(path);
-### Params:
-> - path = path to NRO rom executable
-
-
-# Example:
-```javascript
-const NXReader = require('nxreader'); // Require lib
+const NXReader = require('../'); // Require lib
 
 console.time('XCI Parser');
 // Parse cart dump
@@ -44,4 +20,3 @@ const NRO = NXReader.parseNRO(`${__dirname}/kgdoom.nro`);
 console.timeEnd('NRO Parser');
 
 console.log(NRO);
-```
