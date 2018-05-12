@@ -1,26 +1,46 @@
 {
-  "name": "nxreader",
-  "version": "1.0.0",
-  "description": "Node module for parsing several Switch (NX) file types",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "_from": "git+https://github.com/RedDuckss/NXReader.git",
+  "_id": "nxreader@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-0syIpb6fjfDBNoa7E3u7Y7CZ/5s=",
+  "_location": "/nxreader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/RedDuckss/NXReader",
+    "rawSpec": "https://github.com/RedDuckss/NXReader",
+    "saveSpec": "git+https://github.com/RedDuckss/NXReader.git",
+    "fetchSpec": "https://github.com/RedDuckss/NXReader.git",
+    "gitCommittish": "master"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/RedDuckss/NXReader.git#6f8af79910b27c605bad3fcf887dae694a37570b",
+  "_spec": "https://github.com/RedDuckss/NXReader",
+  "_where": "C:\\Users\\halol\\Documents\\Programming\\Electron\\NXUI",
+  "author": {
+    "name": "RedDuckss",
+    "url": "Jonathan Barrow"
+  },
+  "bugs": {
+    "url": "https://github.com/RedDuckss/NXReader/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "long": "^4.0.0",
     "python-struct": "^1.0.6"
   },
+  "deprecated": false,
+  "description": "Node module for parsing several Switch (NX) file types",
   "devDependencies": {
     "eslint": "^4.19.1"
   },
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint .",
-    "lint-fix": "./node_modules/.bin/eslint . --fix"
+  "directories": {
+    "lib": "lib"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RedDuckss/NXReader.git"
-  },
+  "homepage": "https://github.com/RedDuckss/NXReader#readme",
   "keywords": [
     "nx",
     "switch",
@@ -30,10 +50,16 @@
     "parser",
     "nintendo"
   ],
-  "author": "RedDuckss (Jonathan Barrow)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RedDuckss/NXReader/issues"
+  "main": "index.js",
+  "name": "nxreader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedDuckss/NXReader.git"
   },
-  "homepage": "https://github.com/RedDuckss/NXReader#readme"
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  "version": "1.0.0"
 }
